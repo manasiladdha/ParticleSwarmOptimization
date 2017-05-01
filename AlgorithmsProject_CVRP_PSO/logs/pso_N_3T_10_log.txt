@@ -1,0 +1,70 @@
+---------------------------------------------------------
+Medicines Distribution Model
+---------------------------------------------------------
+No Of Stores : 5
+Store Details : 
+Store [demand=4, recyclables=3]
+Store [demand=9, recyclables=4]
+Store [demand=8, recyclables=3]
+Store [demand=8, recyclables=4]
+Store [demand=4, recyclables=3]
+
+No Of Vehicles : 3
+Vehicle [capacity=12]
+Vehicle [capacity=15]
+Vehicle [capacity=20]
+
+Distance Matrix : 
+	Depot	Store1	Store2	Store3	Store4	Store5	
+Depot	0.0	1.0	40.0	5.0	32.0	29.0	
+Store1	1.0	0.0	4.0	13.0	40.0	40.0	
+Store2	40.0	4.0	0.0	45.0	1.0	32.0	
+Store3	5.0	13.0	45.0	0.0	2.0	45.0	
+Store4	32.0	40.0	1.0	2.0	0.0	17.0	
+Store5	29.0	40.0	32.0	45.0	17.0	0.0	
+---------------------------------------------------------
+Swarm Model
+---------------------------------------------------------
+No of Particles : 3
+Particle Details : 
+Particle [xSolution=[3.0, 5.0, 2.0, 1.0, 4.0], xFitnessValue=158.0, pBest=[3.0, 5.0, 2.0, 1.0, 4.0], pBestValue=158.0, pVelocity=[2.737123136092661, 2.839816682750997, 0.10911221451711028, 1.4993435344130146, 2.460800203504104]]
+Particle [xSolution=[4.0, 2.0, 3.0, 5.0, 1.0], xFitnessValue=164.0, pBest=[4.0, 2.0, 3.0, 5.0, 1.0], pBestValue=164.0, pVelocity=[1.213388030435697, 3.0389231388518656, 4.946566093569096, 2.4619453368763677, 1.385905025090941]]
+Particle [xSolution=[3.0, 4.0, 2.0, 1.0, 5.0], xFitnessValue=81.0, pBest=[3.0, 4.0, 2.0, 1.0, 5.0], pBestValue=81.0, pVelocity=[1.6157304313473726, 1.412103689250085, 4.298538532761255, 3.553642802818337, 2.0461299219144022]]
+Global   [gBest=[3.0, 4.0, 2.0, 1.0, 5.0], gFitnessValue=81.0]
+---------------------------------------------------------
+Iterations Details
+---------------------------------------------------------
+Iteration	f(x:1) f(pBest:1)	f(x:2) f(pBest:2)	f(x:3) f(pBest:3)	f(gBest)
+0 		158.0	158.0		164.0	164.0		81.0	81.0		81.0
+1 		122.0	122.0		135.0	135.0		168.0	81.0		81.0
+2 		180.0	122.0		79.0	79.0		92.0	81.0		79.0
+3 		148.0	122.0		78.0	78.0		58.0	58.0		58.0
+4 		122.0	122.0		78.0	78.0		58.0	58.0		58.0
+5 		92.0	92.0		58.0	58.0		58.0	58.0		58.0
+6 		92.0	92.0		58.0	58.0		58.0	58.0		58.0
+7 		92.0	92.0		58.0	58.0		58.0	58.0		58.0
+8 		58.0	58.0		58.0	58.0		58.0	58.0		58.0
+9 		58.0	58.0		58.0	58.0		58.0	58.0		58.0
+10 		58.0	58.0		58.0	58.0		58.0	58.0		58.0
+---------------------------------------------------------
+Continue with decoding the best solution... ? Y or N
+Y
+Decode gBest Solution
+---------------------------------------------------------
+gFitnessValue=58.0
+gBest=[5.0, 5.0, 5.0, 5.0, 5.0]
+Optimal Route : [1, 2, 3, 4, 5]
+---------------------------------------------------------
+Analysis of Optimal Route for dropOff Only: 
+---------------------------------------------------------
+VehicleCap:20,Trips:2,TotalDistance:69 -> [0, 1, 2, 0, 3, 4, 5, 0]
+VehicleCap:12,Trips:4,TotalDistance:141 -> [0, 1, 0, 2, 0, 3, 0, 4, 5, 0]
+VehicleCap:15,Trips:3,TotalDistance:104 -> [0, 1, 2, 0, 3, 0, 4, 5, 0]
+---------------------------------------------------------
+Analysis of Optimal Route for simultaneously pickup and dropOff: 
+---------------------------------------------------------
+VehicleCap:20,Trips:3,TotalDistance:113 -> [0, 1, 2, 0, 3, 4, 0, 5, 0]
+VehicleCap:12,Trips:5,TotalDistance:185 -> [0, 1, 0, 2, 0, 3, 0, 4, 0, 5, 0]
+VehicleCap:15,Trips:3,TotalDistance:104 -> [0, 1, 2, 0, 3, 0, 4, 5, 0]
+---------------------------------------------------------
+PSO implementation for CVRP is done !! :) 
