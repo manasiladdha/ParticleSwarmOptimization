@@ -13,8 +13,8 @@ Medicine Distribution Problem with simultaneously pick up and drop off can be ca
 # What is PSO and Why PSO?
 
 PSO is an evolutionary computation technique that is based on population-based swarm optimization. 
-•	It is an iterative algorithm that engages several simple entities—particles—iteratively over the search space of objective functions.  
-•	The particles evaluate their fitness values, with respect to the search function, at their current locations. Subsequently, each particle determines its movement through the search space by combining information about its current fitness, its best fitness from previous locations (individual perspective) and best fitness locations with regards to one or more members of the swarm (social perspective), with some random perturbations. 
-•	The next iteration starts after the positions of all particles have been updated.
+*	It is an iterative algorithm that engages several simple entities—particles—iteratively over the search space of objective functions.  
+*	The particles evaluate their fitness values, with respect to the search function, at their current locations. Subsequently, each particle determines its movement through the search space by combining information about its current fitness, its best fitness from previous locations (individual perspective) and best fitness locations with regards to one or more members of the swarm (social perspective), with some random perturbations. 
+*	The next iteration starts after the positions of all particles have been updated.
 
 Since Medicine Distribution Management is a NP-Hard Problem, it is difficult to find a best solution in a required time. We need an optimization algorithm that can identify an optimal solution in an acceptable time frame. I have implemented continuous PSO variant in this problem. Continuous PSO works well with the small-size benchmark problems (the number of stores is less than 75).
